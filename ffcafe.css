@@ -1,0 +1,231 @@
+/*index page*/
+body {
+   font-family: Arial, sans-serif;
+   color: #FF8C00; background-color:black
+}
+
+header, footer {
+   text-align: center;
+   padding: 1em;
+   clear: left;
+}
+
+/*this hold the content together and center them*/
+#wrapper {
+   width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.intro{
+  font-size: 30px;
+}
+
+.image-center{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/*horizontal navbar*/
+nav{
+  text-align: center;
+  font-size: 18px;
+}
+
+ul{
+  padding: 0;
+}
+
+nav a, li {
+   text-decoration: none;
+   color: #FF8C00;
+   display:inline;
+   padding:16px;
+}
+
+nav a:hover{
+   background-color:#991000
+}
+
+/*two column layout by float*/
+section{
+  width: 65%;
+  float: left;
+  line-height: 2;
+}
+
+aside{
+  float: right;
+  width: 25%;
+}
+
+aside a, .location a{
+  color: #FF8C00;
+}
+
+/*menu page*/
+/*responsive image gallery*/
+.menu {
+   width: 200px;
+   margin: 22px;
+   text-align: center;
+   border: 1px solid white;
+   display: inline-block;
+}
+
+.title{
+  text-align: center;
+}
+
+/*about*/
+.about_cafe, .poster{
+  padding: 5px;
+}
+
+/*location*/
+/*two columns layout*/
+.location{
+  text-align: center;
+  width: 50%;
+  line-height: 1;
+}
+
+ .img-location{
+  float: right;
+  width: 50%;
+  height: 335px;
+}
+
+/*contact form*/
+/* Clear floats after the columns */
+.contact{
+  float: none;
+  margin: auto;
+  clear: both;
+}
+
+.contact h3{
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  margin-bottom: 24px;
+}
+
+input[type=text],input[type=email],input[type=tel], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #FF8C00;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 6px;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #FF9A1F;
+}
+
+/*reference*/
+/* Clear floats after the columns */
+.reference{
+  clear: both;
+}
+
+.reference li{
+  display: block;
+  line-height: 1;
+  padding: 5px;
+}
+
+.reference a{
+  text-decoration: none;
+  color: #991000;
+}
+
+.reference a:hover{
+  color: #FF8C00;
+}
+
+/* Clear floats after the columns */
+footer{
+  clear: both;
+}
+
+/*responsive*/
+/*for desktop*/
+@media only screen and (max-width:1024px){
+  .menu{
+    float: left;
+    width: 38%;
+    padding: 10px;
+    height: 30%;
+  }
+
+  h2{
+    clear: both;
+  }
+
+/* 100% Image Width on Smaller Screens */
+  .menu-item{
+    width: 100%;
+    height: 85%;
+  }
+
+  .location{
+    width: 100%;
+  }
+
+  .img-location{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .about{
+    width: 100%;
+    text-align: center;
+  }
+
+  .about_cafe, .poster{
+    float: left;
+    padding: 0;
+  }
+  .intro{
+    font-size: 22px;
+  }
+}
+
+/*for mobile phone*/
+@media only screen and (max-width:768px){
+  .menu{
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav a{
+    display: block;
+  }
+  .logo{
+    width: 100%;
+    height: auto;
+  }
+  .about_cafe, .poster{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+
+}
